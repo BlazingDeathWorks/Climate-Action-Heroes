@@ -7,7 +7,7 @@ namespace DonutStudios.Tiles
     internal class OceanTileStructureBuilder : TileStructureBuilder
     {
         internal override Vector2 MinCornerPos { get; } = new Vector2(2, 2);
-        internal override Vector2 MaxCornerPos { get; } = new Vector2(125, 125);
+        internal override Vector2 MaxCornerPos { get; } = new Vector2(61, 61);
 
         private protected override int Points => 4;
 

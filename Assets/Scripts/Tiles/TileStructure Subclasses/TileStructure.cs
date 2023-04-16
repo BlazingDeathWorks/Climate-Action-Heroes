@@ -13,7 +13,7 @@ namespace DonutStudios.Tiles
         internal void Fill(TileStructureBuilder builder)
         {
             float tempWidth = (int)transform.position.x != builder.HalfPos ? (int)transform.position.x + Width : Width;
-            float tempHeight = (int)transform.position.y != builder.HalfPos ? (int)transform.position.y + Height : Height;
+            float tempHeight = (int)transform.position.y != builder.HalfPos ? (int)transform.position.y + Height : Height + 1;
             for (int i = (int)transform.position.x == builder.HalfPos ? 0 : (int)transform.position.x; i < tempWidth; i++)
             {
                 for (int j = (int)transform.position.y == builder.HalfPos ? 0 : (int)transform.position.y; j < tempHeight; j++)
