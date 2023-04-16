@@ -169,6 +169,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChildBuilder: {fileID: 1506174460}
   TileStructure: {fileID: 3382283969173809005, guid: 76ca11839811a5c489f846d634f525aa, type: 3}
+--- !u!1 &603879445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603879446}
+  - component: {fileID: 603879447}
+  m_Layer: 0
+  m_Name: Desert Tile Structure Builder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603879446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603879445}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 812971250}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &603879447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603879445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 495a53ace61d4954cb3362beff2f7fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChildBuilder: {fileID: 0}
+  TileStructure: {fileID: 1388359637658441828, guid: 92aa6899f7722bf479c1644a59830b4a, type: 3}
+  _minLength: 5
+  _maxLength: 10
 --- !u!1 &812971249
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +249,7 @@ Transform:
   - {fileID: 906671069}
   - {fileID: 443051608}
   - {fileID: 1506174459}
+  - {fileID: 603879446}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -404,7 +453,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1506174459
 Transform:
   m_ObjectHideFlags: 0
@@ -432,5 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb50f5ae32419146b9ce220edbbb201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChildBuilder: {fileID: 0}
-  TileStructure: {fileID: 0}
+  ChildBuilder: {fileID: 603879447}
+  TileStructure: {fileID: 919073679132952453, guid: ebd319cc8054b6d48a76c6f313b6925b, type: 3}
+  _minLength: 10
+  _maxLength: 15

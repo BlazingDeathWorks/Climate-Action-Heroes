@@ -11,7 +11,7 @@ namespace DonutStudios.Tiles
         internal TileStructureBuilder Parent { private protected get; set; }
         [SerializeField] private protected Tile Tile;
 
-        internal void Fill(TileStructureBuilder builder)
+        internal virtual void Fill(TileStructureBuilder builder)
         {
             float tempWidth = (int)transform.position.x != builder.HalfPos ? (int)transform.position.x + Width : Width;
             float tempHeight = (int)transform.position.y != builder.HalfPos ? (int)transform.position.y + Height : Height + 1;
