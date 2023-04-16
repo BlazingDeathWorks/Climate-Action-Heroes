@@ -8,6 +8,7 @@ namespace DonutStudios.Tiles
     {
         internal float Width { private protected get; set; }
         internal float Height { private protected get; set; }
+        internal TileStructureBuilder Parent { private protected get; set; }
         [SerializeField] private protected Tile Tile;
 
         internal void Fill(TileStructureBuilder builder)
@@ -18,7 +19,7 @@ namespace DonutStudios.Tiles
             {
                 for (int j = (int)transform.position.y == builder.HalfPos ? 0 : (int)transform.position.y; j < tempHeight; j++)
                 {
-                    Instantiate(Tile, new Vector2(i, j), Quaternion.identity);
+                    Instantiate(Tile, new Vector2(i, j), Quaternion.identity).GetComponent<Tile>().Parent = Parent;
                 }
             }
         }

@@ -28,6 +28,7 @@ namespace DonutStudios.Tiles
                 //Set structure point size
                 structure.Width = (structure.transform.position.y == HalfPos) ? ChildBuilder.MinCornerPos.x : MaxCornerPos.x;
                 structure.Height = (structure.transform.position.x == HalfPos) ? ChildBuilder.MinCornerPos.y : MaxCornerPos.y;
+                structure.Parent = this;
 
                 Structures[i] = structure;
             }

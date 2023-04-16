@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &894207133783457353
+--- !u!1 &6044661549839174708
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2609624533248985449}
-  - component: {fileID: 7670493357072127380}
+  - component: {fileID: 5905163520903101486}
+  - component: {fileID: 3382283969173809005}
   m_Layer: 0
-  m_Name: Beach Tile Structure
+  m_Name: Grassland Tile Structure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2609624533248985449
+--- !u!4 &5905163520903101486
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894207133783457353}
+  m_GameObject: {fileID: 6044661549839174708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,16 +32,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7670493357072127380
+--- !u!114 &3382283969173809005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894207133783457353}
+  m_GameObject: {fileID: 6044661549839174708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dadcb8847fb2d842aca8b17564328c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b6025801fb9e1241adbbc6cbf85541a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tile: {fileID: 5896766987938658771, guid: 50c5acdb3ff384840bad6471d6a34916, type: 3}
+  Tile: {fileID: 31220349594481735, guid: 73e909c308fc67a46aa9197f9ff71831, type: 3}

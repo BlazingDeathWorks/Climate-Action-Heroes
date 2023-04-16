@@ -4,18 +4,8 @@ using UnityEngine;
 
 namespace DonutStudios.Tiles
 {
-    internal class GrasslandTile : MonoBehaviour
+    internal class GrasslandTile : Tile
     {
-        // Start is called before the first frame update
-        void Start()
-        {
         
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
     }
 }
