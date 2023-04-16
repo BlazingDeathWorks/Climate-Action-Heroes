@@ -1,6 +1,6 @@
 {
-    "name": "DonutStudios.Player.Runtime",
-    "rootNamespace": "DonutStudios.Player",
+    "name": "DonutStudios.Meters.Runtime",
+    "rootNamespace": "DonutStudios.Meters",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
