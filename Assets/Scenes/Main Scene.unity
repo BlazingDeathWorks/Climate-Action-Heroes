@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChildBuilder: {fileID: 0}
-  TileStructure: {fileID: 0}
+  TileStructure: {fileID: 7670493357072127380, guid: 5773062b5a6ef2645b9656112045cddb, type: 3}
 --- !u!1 &1128398699
 GameObject:
   m_ObjectHideFlags: 0
