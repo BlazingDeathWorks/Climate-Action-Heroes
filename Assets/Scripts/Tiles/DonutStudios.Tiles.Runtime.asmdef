@@ -1,9 +1,7 @@
 {
     "name": "DonutStudios.Tiles.Runtime",
     "rootNamespace": "DonutStudios.Tiles",
-    "references": [
-        "GUID:822b6ab0f2660e34d9fcc6722684a185"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

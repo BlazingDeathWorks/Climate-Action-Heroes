@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace DonutStudios.Tiles
 {
-    internal class Tile : MonoBehaviour
+    internal abstract class Tile : MonoBehaviour
     {
-
+        
     }
 }

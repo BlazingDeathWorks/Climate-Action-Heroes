@@ -1,0 +1,13 @@
+	private TileStructure _parent;
+        private Direction _previousDirection;
+        [SerializeField] private int _failLimit = 10;
+
+        internal Direction PickNewDirection()
+        {
+            Direction randomDir;
+            do
+            {
+                randomDir = Direction.Directions[Random.Range(0, Direction.Directions.Length)];
+            } while (randomDir.GetType() == _previousDirection.RestrictedDirection.GetType());
+            return randomDir;
+        }
