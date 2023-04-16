@@ -7,7 +7,7 @@ namespace DonutStudios.Tiles
     internal class SpaceTileStructureBuilder : TileStructureBuilder
     {
         internal override Vector2 MinCornerPos { get; } =  new Vector2(0, 0);
-        internal override Vector2 MaxCornerPos { get; } = new Vector2(63, 63);
+        internal override Vector2 MaxCornerPos { get; } = new Vector2(127, 127);
 
         private protected override int Points => 4;
         private Vector2[] _pointPositions;
@@ -15,7 +15,7 @@ namespace DonutStudios.Tiles
         private protected override void Awake()
         {
             HalfPos = (int)MaxCornerPos.x / 2;
-            _pointPositions = new Vector2[] { new Vector2(0, HalfPos), new Vector2(62, HalfPos), new Vector2(HalfPos, 0), new Vector2(HalfPos, 62) };
+            _pointPositions = new Vector2[] { new Vector2(0, HalfPos), new Vector2(126, HalfPos), new Vector2(HalfPos, 0), new Vector2(HalfPos, 126) };
             base.Awake();
         }
 

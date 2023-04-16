@@ -7,7 +7,7 @@ namespace DonutStudios.Tiles
     internal class GrasslandTileStructureBuilder : TileStructureBuilder
     {
         internal override Vector2 MinCornerPos => new Vector2(14, 14);
-        internal override Vector2 MaxCornerPos => new Vector2(49, 49);
+        internal override Vector2 MaxCornerPos => new Vector2(113, 113);
         [SerializeField] private int _minLength, _maxLength;
 
         private protected override int Points => 1;

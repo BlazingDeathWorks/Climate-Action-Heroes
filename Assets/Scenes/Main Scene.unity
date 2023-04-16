@@ -215,8 +215,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChildBuilder: {fileID: 0}
   TileStructure: {fileID: 1388359637658441828, guid: 92aa6899f7722bf479c1644a59830b4a, type: 3}
-  _minLength: 5
-  _maxLength: 10
+  _minLength: 10
+  _maxLength: 20
 --- !u!1 &718193475
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +297,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718193475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32, y: 32, z: -10}
+  m_LocalPosition: {x: 64, y: 64, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -398,7 +398,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722451533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32, y: 32, z: 0}
+  m_LocalPosition: {x: 64, y: 64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -635,7 +635,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128398699}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32, y: 32, z: -10}
+  m_LocalPosition: {x: 64, y: 64, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -768,8 +768,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChildBuilder: {fileID: 603879447}
   TileStructure: {fileID: 919073679132952453, guid: ebd319cc8054b6d48a76c6f313b6925b, type: 3}
-  _minLength: 10
-  _maxLength: 15
+  _minLength: 25
+  _maxLength: 35
 --- !u!1 &1690462121
 GameObject:
   m_ObjectHideFlags: 3

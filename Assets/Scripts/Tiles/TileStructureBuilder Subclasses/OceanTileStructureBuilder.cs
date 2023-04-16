@@ -7,7 +7,7 @@ namespace DonutStudios.Tiles
     internal class OceanTileStructureBuilder : TileStructureBuilder
     {
         internal override Vector2 MinCornerPos { get; } = new Vector2(2, 2);
-        internal override Vector2 MaxCornerPos { get; } = new Vector2(61, 61);
+        internal override Vector2 MaxCornerPos { get; } = new Vector2(125, 125);
 
         private protected override int Points => 4;
         private Vector2[] _pointPositions;
@@ -15,7 +15,7 @@ namespace DonutStudios.Tiles
         private protected override void Awake()
         {
             HalfPos = (int)MaxCornerPos.x / 2;
-            _pointPositions = new Vector2[] { new Vector2(2, HalfPos), new Vector2(50, HalfPos), new Vector2(HalfPos, 2), new Vector2(HalfPos, 50) };
+            _pointPositions = new Vector2[] { new Vector2(2, HalfPos), new Vector2(114, HalfPos), new Vector2(HalfPos, 2), new Vector2(HalfPos, 114) };
             base.Awake();
         }
 
