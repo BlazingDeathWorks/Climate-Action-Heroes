@@ -29,6 +29,7 @@ namespace DonutStudios.Tiles
             {
                 Structures[i].Fill(this);
             }
+            /*TileManager.Instance.AddCheck();*/
         }
     }
 }

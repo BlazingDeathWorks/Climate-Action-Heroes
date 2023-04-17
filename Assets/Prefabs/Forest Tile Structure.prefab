@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tile: {fileID: 2909021205223667341, guid: fc6aca768ca15494d98e36da617acfda, type: 3}
+  _ghostTile: {fileID: 4104825634736267658, guid: 113d792c0f33fb743908d66526491f6e, type: 3}
