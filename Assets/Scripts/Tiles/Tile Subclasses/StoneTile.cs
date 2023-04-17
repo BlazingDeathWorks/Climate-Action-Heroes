@@ -6,6 +6,9 @@ namespace DonutStudios.Tiles
 {
     internal class StoneTile : Tile
     {
-        
+        private protected override void Start()
+        {
+            
+        }
     }
 }

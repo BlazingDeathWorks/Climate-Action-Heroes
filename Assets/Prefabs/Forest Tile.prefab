@@ -99,6 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccdd78ca340a4bb4caa9ac1fe389da1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animal: {fileID: 7665343288225349769, guid: b1af0bec4f2d5ce46aaa27ba44f570c0, type: 3}
+  _spawnRate: 45
+  _percentChance: 1
 --- !u!61 &3356498052980458454
 BoxCollider2D:
   m_ObjectHideFlags: 0

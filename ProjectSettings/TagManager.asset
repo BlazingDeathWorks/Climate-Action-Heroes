@@ -44,6 +44,9 @@ TagManager:
   - name: Equipment
     uniqueID: 28854533
     locked: 0
+  - name: Animal
+    uniqueID: 119177929
+    locked: 0
   - name: Player
     uniqueID: 2384936971
     locked: 0
