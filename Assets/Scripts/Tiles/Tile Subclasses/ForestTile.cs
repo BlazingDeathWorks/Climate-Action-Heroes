@@ -11,9 +11,10 @@ namespace DonutStudios.Tiles
         [SerializeField] private int _percentChance = 1;
         private float _timeSinceLastSpawned;
 
-        private void Awake()
+        private protected override void Awake()
         {
             _timeSinceLastSpawned = _spawnRate;
+            base.Awake();
         }
 
         private void Update()

@@ -1,9 +1,7 @@
 {
-    "name": "DonutStudios.Meters.Runtime",
-    "rootNamespace": "DonutStudios.Meters",
-    "references": [
-        "GUID:6890eadfd6c5d834fae4f3eaceef35d9"
-    ],
+    "name": "DonutStudios.Equipment.Runtime",
+    "rootNamespace": "DonutStudios.Equipment",
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

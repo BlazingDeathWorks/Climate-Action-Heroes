@@ -8,6 +8,7 @@ namespace DonutStudios.Tiles
     internal abstract class Tile : MonoBehaviour
     {
         internal TileStructureBuilder Parent { private protected get; set; }
+        private Collider2D _collider;
         /*[SerializeField] private ActionChannel _tileBuildFinished;
         [SerializeField] private ActionChannel _tileWipeFinished;*/
         /*private bool _wipeTiles = false;*/
@@ -17,6 +18,11 @@ namespace DonutStudios.Tiles
         {
             _sr = GetComponent<SpriteRenderer>();
         }*/
+
+        private protected virtual void Awake()
+        {
+            _collider = GetComponent<Collider2D>();
+        }
 
         private protected virtual void Start()
         {
@@ -67,6 +73,7 @@ namespace DonutStudios.Tiles
         private protected virtual void Interact()
         {
             Debug.Log(gameObject.name);
+            _collider.enabled = false;
         }
     }
 }
