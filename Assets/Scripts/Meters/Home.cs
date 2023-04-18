@@ -26,6 +26,10 @@ namespace DonutStudios.Meters
             int meat = ItemManager.Instance.GetMeat();
             DirectMeterManager.Instance.HungerLevel += meat;
             DirectMeterManager.Instance.TemperatureLevel += meat;
+
+            int crop = ItemManager.Instance.GetCrop();
+            DirectMeterManager.Instance.HungerLevel += crop;
+
             DirectMeterManager.Instance.UpdateTemperature();
             DirectMeterManager.Instance.ClampAllValues();
         }

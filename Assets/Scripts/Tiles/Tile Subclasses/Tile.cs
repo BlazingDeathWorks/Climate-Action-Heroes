@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FutureInspireGames.Channels;
+using DonutStudios.Equipment;
 
 namespace DonutStudios.Tiles
 {
-    internal abstract class Tile : MonoBehaviour
+    public abstract class Tile : MonoBehaviour
     {
         internal TileStructureBuilder Parent { private protected get; set; }
-        private Collider2D _collider;
         /*[SerializeField] private ActionChannel _tileBuildFinished;
         [SerializeField] private ActionChannel _tileWipeFinished;*/
         /*private bool _wipeTiles = false;*/
@@ -21,7 +20,7 @@ namespace DonutStudios.Tiles
 
         private protected virtual void Awake()
         {
-            _collider = GetComponent<Collider2D>();
+           
         }
 
         private protected virtual void Start()
@@ -62,6 +61,15 @@ namespace DonutStudios.Tiles
             Interact();
         }
 
+        private void OnMouseOver()
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                Destroy(gameObject);
+                Instantiate(EquipmentManager.Instance.GetCurrentEquipment(), transform.position, Quaternion.identity).PlaceDown(gameObject, LayerMask.LayerToName(gameObject.layer));
+            }
+        }
+
         /*private void DisableWipe()
         {
             _wipeTiles = false;
@@ -74,7 +82,7 @@ namespace DonutStudios.Tiles
 
         private protected virtual void Interact()
         {
-            //_collider.enabled = false;
+            
         }
     }
 }

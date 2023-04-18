@@ -41,11 +41,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Equipment
-    uniqueID: 28854533
-    locked: 0
   - name: Animal
     uniqueID: 119177929
+    locked: 0
+  - name: Equipment
+    uniqueID: 28854533
     locked: 0
   - name: Player
     uniqueID: 2384936971
