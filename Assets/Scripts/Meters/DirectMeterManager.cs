@@ -6,7 +6,7 @@ using FutureInspireGames.Singleton;
 
 namespace DonutStudios.Meters
 {
-    internal class DirectMeterManager : Singleton<DirectMeterManager>
+    public class DirectMeterManager : Singleton<DirectMeterManager>
     {
         public float HungerLevel { get; set; } 
         public float ThirstLevel { get; set;}
@@ -30,6 +30,13 @@ namespace DonutStudios.Meters
 
             _hungerBar.value = HungerLevel;
             _thirstBar.value = ThirstLevel;
+        }
+
+        public void ClampAllValues()
+        {
+            HungerLevel = Mathf.Clamp(HungerLevel, 0, _hungerBar.maxValue);
+            ThirstLevel = Mathf.Clamp(ThirstLevel, 0, _thirstBar.maxValue);
+            TemperatureLevel = Mathf.Clamp(TemperatureLevel, 0, _temperatureBar.maxValue);
         }
 
         public void UpdateTemperature()

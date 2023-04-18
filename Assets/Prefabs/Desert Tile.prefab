@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7882950000184936936}
   - component: {fileID: 6676952348788908962}
   - component: {fileID: -8852674700007329838}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Desert Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}

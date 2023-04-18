@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4397076850305105265}
   - component: {fileID: 4288933265465075170}
   - component: {fileID: 4221745498506243661}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}

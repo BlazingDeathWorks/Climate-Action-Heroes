@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5896766987938658771}
   - component: {fileID: 6987374292972219731}
   - component: {fileID: 5984931571714837599}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Beach Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}

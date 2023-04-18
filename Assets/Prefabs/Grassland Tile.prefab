@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 31220349594481735}
   - component: {fileID: 709076059276621775}
   - component: {fileID: -1246091147884674006}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grassland Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,8 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d62b5da2d8ac54d842d3108a611cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tileBuildFinished: {fileID: 11400000, guid: e9f3de035d32f8b4998c169f11a7a54a, type: 2}
-  _tileWipeFinished: {fileID: 11400000, guid: 435166d45b800ce4ba3a1456b4ab77a9, type: 2}
+  _forestTile: {fileID: 2909021205223667341, guid: fc6aca768ca15494d98e36da617acfda, type: 3}
 --- !u!61 &709076059276621775
 BoxCollider2D:
   m_ObjectHideFlags: 0

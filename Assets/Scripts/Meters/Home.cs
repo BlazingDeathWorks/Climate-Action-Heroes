@@ -23,7 +23,11 @@ namespace DonutStudios.Meters
 
         private void OnMouseDown()
         {
-            DirectMeterManager.Instance.HungerLevel += ItemManager.Instance.GetMeat();
+            int meat = ItemManager.Instance.GetMeat();
+            DirectMeterManager.Instance.HungerLevel += meat;
+            DirectMeterManager.Instance.TemperatureLevel += meat;
+            DirectMeterManager.Instance.UpdateTemperature();
+            DirectMeterManager.Instance.ClampAllValues();
         }
     }
 }

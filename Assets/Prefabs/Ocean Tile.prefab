@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -6553220052305937901}
   - component: {fileID: -8842563614279051485}
   - component: {fileID: -2244563189434479170}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ocean Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,8 +100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 349ea73c2fb8eab4e8e283ccd7933072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tileBuildFinished: {fileID: 11400000, guid: e9f3de035d32f8b4998c169f11a7a54a, type: 2}
-  _tileWipeFinished: {fileID: 11400000, guid: 435166d45b800ce4ba3a1456b4ab77a9, type: 2}
 --- !u!61 &-6553220052305937901
 BoxCollider2D:
   m_ObjectHideFlags: 0

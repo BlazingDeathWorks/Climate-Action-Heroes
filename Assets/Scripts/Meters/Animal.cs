@@ -10,8 +10,6 @@ namespace DonutStudios.Meters
         {
             Destroy(gameObject);
             ItemManager.Instance.IncreaseMeat(5);
-            DirectMeterManager.Instance.TemperatureLevel += 1;
-            DirectMeterManager.Instance.UpdateTemperature();
         }
     }
 }

@@ -74,7 +74,7 @@ namespace DonutStudios.Tiles
 
         private protected virtual void Interact()
         {
-            _collider.enabled = false;
+            //_collider.enabled = false;
         }
     }
 }
