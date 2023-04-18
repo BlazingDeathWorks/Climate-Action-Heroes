@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 28854533
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.87419325, g: 0.6839622, b: 1, a: 1}
@@ -103,10 +103,8 @@ MonoBehaviour:
   ElectricityCost: 1
   MetalCost: 3
   AllowableTiles:
-  - serializedVersion: 2
-    m_Bits: 512
-  - serializedVersion: 2
-    m_Bits: 1024
+  - Grassland
+  - Desert
   CarbonCost: 1
 --- !u!61 &370710956357024517
 BoxCollider2D:

@@ -16,7 +16,7 @@ namespace DonutStudios.Equipment
         [SerializeField] internal bool IsFunctional = false;
         [SerializeField] protected int ElectricityCost;
         [SerializeField] protected int MetalCost;
-        [SerializeField] protected LayerMask[] AllowableTiles;
+        [SerializeField] protected string[] AllowableTiles;
         [SerializeField] protected int CarbonCost;
 
         private void Awake()
@@ -38,7 +38,7 @@ namespace DonutStudios.Equipment
         {
             for (int i = 0; i < AllowableTiles.Length; i++)
             {
-                if (LayerMask.LayerToName(AllowableTiles[i]) == layerName) return true;
+                if (AllowableTiles[i] == layerName) return true;
             }
             return false;
         }

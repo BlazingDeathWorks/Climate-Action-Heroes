@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c140e375354d8f4cacc671a0d0fcac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _electricitySlider: {fileID: 0}
+  _electricitySlider: {fileID: 250497822}
 --- !u!4 &248352721
 Transform:
   m_ObjectHideFlags: 0

@@ -101,10 +101,8 @@ MonoBehaviour:
   ElectricityCost: 40
   MetalCost: 30
   AllowableTiles:
-  - serializedVersion: 2
-    m_Bits: 512
-  - serializedVersion: 2
-    m_Bits: 1024
+  - Grassland
+  - Desert
   CarbonCost: 20
   _carbonBlowUp: 30
   _generatingElectricity: 20

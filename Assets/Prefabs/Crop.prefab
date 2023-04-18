@@ -101,8 +101,7 @@ MonoBehaviour:
   ElectricityCost: 0
   MetalCost: 0
   AllowableTiles:
-  - serializedVersion: 2
-    m_Bits: 512
+  - Grassland
   CarbonCost: 0
   _growingRate: 60
   _cropsPerGrowth: 2

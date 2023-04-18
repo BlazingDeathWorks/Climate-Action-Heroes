@@ -65,7 +65,6 @@ namespace DonutStudios.Tiles
         {
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
-                Destroy(gameObject);
                 Instantiate(EquipmentManager.Instance.GetCurrentEquipment(), transform.position, Quaternion.identity).PlaceDown(gameObject, LayerMask.LayerToName(gameObject.layer));
             }
         }
