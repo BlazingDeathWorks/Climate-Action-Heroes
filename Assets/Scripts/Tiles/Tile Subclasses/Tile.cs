@@ -26,6 +26,8 @@ namespace DonutStudios.Tiles
 
         private protected virtual void Start()
         {
+            if (Parent == null) return;
+
             if (transform.position.x >= (int)Parent.MinCornerPos.x && transform.position.x <= (int)Parent.MaxCornerPos.x &&
                 transform.position.y >= (int)Parent.MinCornerPos.y && transform.position.y <= (int)Parent.MaxCornerPos.y)
             {
@@ -72,7 +74,6 @@ namespace DonutStudios.Tiles
 
         private protected virtual void Interact()
         {
-            Debug.Log(gameObject.name);
             _collider.enabled = false;
         }
     }

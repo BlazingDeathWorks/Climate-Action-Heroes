@@ -25,7 +25,7 @@ namespace DonutStudios.Tiles
             {
                 _timeSinceLastSpawned = 0;
                 if (!MathUtil.PercentChance(_percentChance)) return;
-                Instantiate(_animal, transform.position, Quaternion.identity);
+                Instantiate(_animal, new Vector3(transform.position.x, transform.position.y, -8), Quaternion.identity);
             }
         }
 

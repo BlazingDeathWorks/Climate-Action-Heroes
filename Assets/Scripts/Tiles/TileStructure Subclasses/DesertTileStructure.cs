@@ -8,19 +8,19 @@ namespace DonutStudios.Tiles
     {
         private void FillRow(int widthCount, int rightPos, int leftPos, int height)
         {
-            Instantiate(Tile, new Vector3(transform.position.x, height, -8), Quaternion.identity).GetComponent<Tile>().Parent = Parent;
+            Instantiate(Tile, new Vector3(transform.position.x, height, -7), Quaternion.identity).GetComponent<Tile>().Parent = Parent;
             while (widthCount < Width)
             {
                 if (widthCount % 2 == 0)
                 {
                     rightPos++;
-                    Instantiate(Tile, new Vector3(rightPos, height, -8), Quaternion.identity).GetComponent<Tile>().Parent = Parent;
+                    Instantiate(Tile, new Vector3(rightPos, height, -7), Quaternion.identity).GetComponent<Tile>().Parent = Parent;
                 }
 
                 else
                 {
                     leftPos--;
-                    Instantiate(Tile, new Vector3(leftPos, height, -8), Quaternion.identity).GetComponent<Tile>().Parent = Parent;
+                    Instantiate(Tile, new Vector3(leftPos, height, -7), Quaternion.identity).GetComponent<Tile>().Parent = Parent;
                 }
 
                 widthCount++;

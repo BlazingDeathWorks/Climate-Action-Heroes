@@ -20,5 +20,10 @@ namespace DonutStudios.Meters
                 DirectMeterManager.Instance.IncrementDecreaseSpeed(_decreaseIncrement);
             }
         }
+
+        private void OnMouseDown()
+        {
+            DirectMeterManager.Instance.HungerLevel += ItemManager.Instance.GetMeat();
+        }
     }
 }

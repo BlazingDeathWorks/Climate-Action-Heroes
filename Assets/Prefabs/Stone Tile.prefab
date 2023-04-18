@@ -99,8 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3843b24e9b20db408e21239d04fc776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tileBuildFinished: {fileID: 11400000, guid: e9f3de035d32f8b4998c169f11a7a54a, type: 2}
-  _tileWipeFinished: {fileID: 11400000, guid: 435166d45b800ce4ba3a1456b4ab77a9, type: 2}
+  _beachTile: {fileID: 5896766987938658771, guid: 50c5acdb3ff384840bad6471d6a34916, type: 3}
 --- !u!61 &4288933265465075170
 BoxCollider2D:
   m_ObjectHideFlags: 0
