@@ -106,7 +106,7 @@ MonoBehaviour:
   - Grassland
   - Desert
   CarbonCost: 30
-  _drinkEffectIncrease: 10
+  _drinkEffectIncrease: 5
 --- !u!50 &992827232088779934
 Rigidbody2D:
   serializedVersion: 4

@@ -11,6 +11,15 @@ namespace DonutStudios.Equipment
         //Drink effectiveness increase
         public static int DrinkEffectiveness { get; set; } = 1;
         [SerializeField] private int _drinkEffectIncrease = 10;
+        private bool _complete = false;
+
+        private void Update()
+        {
+            if (!IsFunctional) return;
+            if (_complete) return;
+            DrinkEffectiveness += _drinkEffectIncrease;
+            _complete = true;
+        }
 
         public override void PlaceDown(GameObject tile, string layerName)
         {
@@ -21,7 +30,6 @@ namespace DonutStudios.Equipment
             }
             tile.GetComponent<BoxCollider2D>().enabled = false;
             gameObject.SetActive(true);
-            DrinkEffectiveness += _drinkEffectIncrease;
         }
     }
 }

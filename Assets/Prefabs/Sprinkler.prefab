@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsFunctional: 0
-  ElectricityCost: 20
+  ElectricityCost: 30
   MetalCost: 20
   AllowableTiles:
   - Grassland
