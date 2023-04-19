@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DonutStudios.Meters;
 
 namespace DonutStudios.Tiles
 {
     internal class DesertTile : Tile
     {
-        private protected override void Interact()
+        private void OnDestroy()
         {
-            Debug.Log("Desert");
+            GameManager.Instance.AddScore(50);
         }
     }
 }

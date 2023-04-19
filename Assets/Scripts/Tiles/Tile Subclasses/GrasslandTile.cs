@@ -9,6 +9,11 @@ namespace DonutStudios.Tiles
     {
         [SerializeField] private ForestTile _forestTile;
 
+        private void OnDestroy()
+        {
+            GameManager.Instance.AddScore(50);
+        }
+
         private protected override void Interact()
         {
             Destroy(gameObject);

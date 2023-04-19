@@ -833,6 +833,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameOverOverlay: {fileID: 386447957}
+  _scoreText: {fileID: 2042285650}
+  _highScoreText: {fileID: 18936311}
 --- !u!4 &310905130
 Transform:
   m_ObjectHideFlags: 0

@@ -28,10 +28,5 @@ namespace DonutStudios.Tiles
                 Instantiate(_animal, new Vector3(transform.position.x, transform.position.y, -8), Quaternion.identity);
             }
         }
-
-        private protected override void Interact()
-        {
-            Debug.Log("Forest");
-        }
     }
 }
