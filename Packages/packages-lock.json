@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.futureinspiregames.futureinspireutil": {
-      "version": "https://github.com/BlazingDeathWorks/Future-Inspire-Utility.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "7456cc15bb3391a3666ad482a56274f65c1b8c1b"
-    },
     "com.unity.2d.animation": {
       "version": "9.0.1",
       "depth": 1,

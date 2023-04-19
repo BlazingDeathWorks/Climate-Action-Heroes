@@ -1,14 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FutureInspireGames.Singleton;
 
 namespace DonutStudios.Equipment
 {
-    public class EquipmentManager : Singleton<EquipmentManager>
+    public class EquipmentManager : MonoBehaviour
     {
+        public static EquipmentManager Instance;
         [SerializeField] private Equipment[] _equipments;
         private int _index = 1;
+
+        private void Awake()
+        {
+            Instance = this;
+        }
 
         private void Update()
         {

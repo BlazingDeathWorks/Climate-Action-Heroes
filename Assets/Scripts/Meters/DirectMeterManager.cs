@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using FutureInspireGames.Singleton;
 
 namespace DonutStudios.Meters
 {
-    public class DirectMeterManager : Singleton<DirectMeterManager>
+    public class DirectMeterManager : MonoBehaviour
     {
+        public static DirectMeterManager Instance;
         public float HungerLevel { get; set; } 
         public float ThirstLevel { get; set;}
         public float TemperatureLevel { get; set; }
@@ -16,9 +16,9 @@ namespace DonutStudios.Meters
         [SerializeField] private Slider _thirstBar;
         [SerializeField] private Slider _temperatureBar;
 
-        protected override void Awake()
+        private void Awake()
         {
-            base.Awake();
+            Instance = this;
             HungerLevel = _hungerBar.maxValue;
             ThirstLevel = _thirstBar.maxValue;
         }

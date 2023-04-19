@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using FutureInspireGames.Singleton;
 
 namespace DonutStudios.Meters
 {
-    internal class LoadManager : Singleton<LoadManager>
+    internal class LoadManager : MonoBehaviour
     {
+        public static LoadManager Instance;
         public Text LoadingText;
+
+        private void Awake()
+        {
+            Instance = this;
+        }
     }
 }

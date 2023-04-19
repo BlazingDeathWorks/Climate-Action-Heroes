@@ -1,19 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FutureInspireGames.Singleton;
 using UnityEngine.UI;
 
 namespace DonutStudios.Meters
 {
     //Game Flow and Score Manager
-    public class GameManager : Singleton<GameManager>
+    public class GameManager : MonoBehaviour
     {
+        public static GameManager Instance;
         [SerializeField] private GameObject _gameOverOverlay;
         [SerializeField] private Text _scoreText;
         [SerializeField] private Text _highScoreText;
         private const string HIGH_SCORE = "High Score";
         private int _score;
+
+        private void Awake()
+        {
+            Instance = this;
+        }
 
         [ContextMenu("Reset High Score")]
         private void ResetHighScore()

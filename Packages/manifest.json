@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.futureinspiregames.futureinspireutil": "https://github.com/BlazingDeathWorks/Future-Inspire-Utility.git",
     "com.unity.cinemachine": "2.9.5",
     "com.unity.collab-proxy": "2.0.3",
     "com.unity.feature.2d": "1.0.0",

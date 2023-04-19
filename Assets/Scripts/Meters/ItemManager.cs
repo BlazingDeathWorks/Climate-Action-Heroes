@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FutureInspireGames.Singleton;
 using UnityEngine.UI;
 
 namespace DonutStudios.Meters
 {
-    public class ItemManager : Singleton<ItemManager>
+    public class ItemManager : MonoBehaviour
     {
+        public static ItemManager Instance;
         public int Meat { get; set; }
         public int Crop { get; set; } 
         public int Metal { get; set; }
         [SerializeField] private Slider _meatBar, _cropBar, _metalBar;
+
+        private void Awake()
+        {
+            Instance = this;
+        }
 
         public void IncreaseMeat(int value)
         {

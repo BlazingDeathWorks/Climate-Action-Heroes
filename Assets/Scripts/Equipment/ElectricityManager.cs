@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using FutureInspireGames.Singleton;
 
 namespace DonutStudios.Equipment
 {
-    internal class ElectricityManager : Singleton<ElectricityManager>
+    internal class ElectricityManager : MonoBehaviour
     {
+        public static ElectricityManager Instance;
         internal int ElectricityAvailable { get; set; }
         [SerializeField] private Slider _electricitySlider;
 
-        protected override void Awake()
+        private void Awake()
         {
-            base.Awake();
+            Instance = this;
             ElectricityAvailable = (int)_electricitySlider.maxValue;
             UpdateElectricitySlider();
         }
