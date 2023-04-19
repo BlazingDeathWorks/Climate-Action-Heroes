@@ -30,6 +30,12 @@ namespace DonutStudios.Meters
 
             _hungerBar.value = HungerLevel;
             _thirstBar.value = ThirstLevel;
+
+            //Check end condition for hunger and thirst
+            if (HungerLevel <= 0 || ThirstLevel <= 0)
+            {
+                GameManager.Instance.GameOver();
+            }
         }
 
         public void ClampAllValues()
@@ -42,6 +48,11 @@ namespace DonutStudios.Meters
         public void UpdateTemperature()
         {
             _temperatureBar.value = TemperatureLevel;
+            //Check end condition for temperature
+            if (TemperatureLevel >= _temperatureBar.maxValue)
+            {
+                GameManager.Instance.GameOver();
+            }
         }
 
         public void IncrementDecreaseSpeed(float value)

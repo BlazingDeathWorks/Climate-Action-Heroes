@@ -1,21 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FutureInspireGames.Singleton;
 
 namespace DonutStudios.Meters
 {
-    internal class GameManager : MonoBehaviour
+    //Game Flow and Score Manager
+    internal class GameManager : Singleton<GameManager>
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
+        [SerializeField] private GameObject _gameOverOverlay;
 
-        // Update is called once per frame
-        void Update()
+        public void GameOver()
         {
-        
+            if (_gameOverOverlay == null) return;
+            _gameOverOverlay.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }

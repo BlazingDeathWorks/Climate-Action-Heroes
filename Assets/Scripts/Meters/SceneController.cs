@@ -7,8 +7,16 @@ using FutureInspireGames.Singleton;
 
 namespace DonutStudios.Meters
 {
-    internal class SceneController : Singleton<SceneController>
+    internal class SceneController : MonoBehaviour
     {
+        public static SceneController Instance;
+
+        private void Awake()
+        {
+            Instance = this;
+            Time.timeScale = 1;
+        }
+
         private IEnumerator LoadAsyncScene(int index)
         {
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(index);
