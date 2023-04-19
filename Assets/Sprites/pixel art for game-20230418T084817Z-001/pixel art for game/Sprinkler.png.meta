@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 205
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,9 +103,42 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sprinkler_20
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 126
+        width: 355
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c7d2d264ed7bf4b87c4bedf66a37cb
+      internalID: 1903741223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -116,7 +149,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprinkler_0: -2048420709
+      Sprinkler_1: 1300620171
+      Sprinkler_10: -1949627788
+      Sprinkler_11: -1207558386
+      Sprinkler_12: 917247278
+      Sprinkler_13: 918948689
+      Sprinkler_14: -1587290433
+      Sprinkler_15: 928306378
+      Sprinkler_16: -1477705544
+      Sprinkler_17: -1303141728
+      Sprinkler_18: -1308604668
+      Sprinkler_19: 2121003982
+      Sprinkler_2: 385168507
+      Sprinkler_20: 1903741223
+      Sprinkler_21: 934820577
+      Sprinkler_22: 2042651496
+      Sprinkler_23: 573686429
+      Sprinkler_24: -1060954577
+      Sprinkler_25: 1987139704
+      Sprinkler_3: -1667965308
+      Sprinkler_4: -1371397137
+      Sprinkler_5: -458484387
+      Sprinkler_6: 858615212
+      Sprinkler_7: 44453665
+      Sprinkler_8: 705335492
+      Sprinkler_9: 484748520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

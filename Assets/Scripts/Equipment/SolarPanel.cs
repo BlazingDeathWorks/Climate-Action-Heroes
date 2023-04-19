@@ -28,7 +28,7 @@ namespace DonutStudios.Equipment
                 Destroy(gameObject);
                 return;
             }
-            Destroy(tile);
+            tile.GetComponent<BoxCollider2D>().enabled = false;
             gameObject.SetActive(true);
         }
     }
