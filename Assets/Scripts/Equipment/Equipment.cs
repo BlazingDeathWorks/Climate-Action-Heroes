@@ -53,6 +53,9 @@ namespace DonutStudios.Equipment
 
                 ItemManager.Instance.Metal -= MetalCost;
                 ItemManager.Instance.UpdateMetalSlider();
+
+                DirectMeterManager.Instance.TemperatureLevel += CarbonCost;
+                DirectMeterManager.Instance.UpdateTemperature();
                 return true;
             }
             return false;

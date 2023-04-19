@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5942303532357255166}
   - component: {fileID: 4977002552726980786}
   - component: {fileID: 4008921972268728301}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sprinkler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,8 @@ MonoBehaviour:
   IsFunctional: 0
   ElectricityCost: 20
   MetalCost: 20
-  AllowableTiles: []
+  AllowableTiles:
+  - Grassland
   CarbonCost: 5
 --- !u!50 &4977002552726980786
 Rigidbody2D:

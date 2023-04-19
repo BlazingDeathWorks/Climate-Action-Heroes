@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2497190447834341795}
   - component: {fileID: 370710956357024517}
   - component: {fileID: 7258785509193400104}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Pole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
